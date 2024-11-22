@@ -17,7 +17,7 @@ considerando que cada código abaixo em linguarem c esta dentro de uma função 
 ```c
 FILE * fp = fopen("exemplo", "w+");
 int count = 1;
-while (count > 5) {
+while (count < 5) {
   fprintf(fp, "%d ", count);
   printf("%d\n", count);
   count++;
@@ -29,7 +29,7 @@ fclose(fp);
 ```c
 FILE * fp = fopen("exemplo", "w+");
 int count = 1;
-while (count > 5) {
+while (count < 5) {
   fprintf(fp, "%d ", count);
   count++;
 }
@@ -39,7 +39,7 @@ fclose(fp);
 **t3** Tarefa 3
 ```c
 int count = 1;
-while (count > 5) {
+while (count < 5) {
   count++;
 }
 ```
